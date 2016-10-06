@@ -27,6 +27,7 @@ $(document).ready(function() {
     }
     else {
       token = response.id;
+      console.log(token);
       $form.append($("<input type=\"hidden\" name=\"payment[token]\" />").val(token));
       $("[data-stripe=number]").remove();
       $("[data-stripe=cvv]").remove();
